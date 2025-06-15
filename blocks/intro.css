@@ -1,0 +1,49 @@
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-left: 148px;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 3.375rem;
+  line-height: 1.07;
+  max-width: 830px;
+  margin: 0;
+  padding: 0;
+  padding-top: 92px;
+}
+
+.intro__quote {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  max-width: 738px;
+}
+
+.intro__quote-cite {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  max-width: 738px;
+  text-align: right;
+}
+
+.intro__text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.63;
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  max-width: 725px;
+}

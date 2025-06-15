@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__author {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  padding-top: 92px;
+  padding-bottom: 24px;
+}
