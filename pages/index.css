@@ -1,14 +1,11 @@
-/* vendors */
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts.css");
 
-/* blocks */
 @import url("../blocks/page.css");
 @import url("../blocks/header.css");
 @import url("../blocks/lead.css");
 @import url("../blocks/intro.css");
 @import url("../blocks/footer.css");
 
-/* Media Queries */
 @import url("../media/tablet.css");
 @import url("../media/mobile.css");
