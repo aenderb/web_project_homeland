@@ -8,5 +8,5 @@ Tecnologias utilizadas HTML + CSS
     - Metodologia BEM (CSS + Arquivos)
     - Design Responsivo com uso de Media Queries
   
-Acesse a pagina aqui: 
+Acesse a pagina aqui: https://aenderb.github.io/web_project_homeland/
 
