@@ -1,5 +1,5 @@
 .intro {
-  width: 100%;
+  max-width: 984px;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -48,21 +48,25 @@
   max-width: 725px;
 }
 
+@media (min-width: 769px) and (max-width: 1150px) {
+  .intro {
+    padding-left: 88px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     padding-left: 24px;
   }
-
   .intro__title {
     font-size: 2.812rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .intro {
     padding-left: 16px;
   }
-
   .intro__title {
     font-size: 2rem;
   }
