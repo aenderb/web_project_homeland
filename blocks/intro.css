@@ -49,9 +49,34 @@
 }
 
 @media (min-width: 769px) and (max-width: 1150px) {
+<<<<<<< HEAD
+=======
   .intro {
     padding-left: 88px;
   }
+}
+
+@media screen and (max-width: 768px) {
+>>>>>>> origin/main
+  .intro {
+    padding-left: 88px;
+  }
+<<<<<<< HEAD
+=======
+  .intro__title {
+    font-size: 2.812rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro {
+    padding-left: 16px;
+  }
+  .intro__title {
+    font-size: 2rem;
+  }
+
+>>>>>>> origin/main
   .intro__quote-cite {
     padding-right: 32px;
   }
