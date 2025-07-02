@@ -38,7 +38,7 @@ f.places {
   margin: 0 0 8px;
   font-weight: 400;
   font-size: 12px;
-  letter-spacing: 12%;
+  letter-spacing: 0.12em;
   line-height: 100%;
   color: #aaa;
   text-transform: uppercase;
