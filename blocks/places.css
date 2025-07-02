@@ -1,4 +1,4 @@
-.places {
+f.places {
   display: flex;
   flex-direction: column;
   max-width: 984px;
@@ -51,7 +51,8 @@
 }
 
 .places__item-image {
-  width: 100%;
+  width: 460px;
+  height: 460px;
   grid-area: image;
   object-fit: cover;
   margin: 0;
@@ -194,7 +195,7 @@
 
   .places__item-image {
     width: 352px;
-    padding-bottom: auto;
+    height: 352px;
     box-shadow: none;
     object-fit: cover;
   }
@@ -235,7 +236,7 @@
 
   .places__item-image {
     width: 320px;
-    padding-bottom: auto;
+    height: 320px;
     box-shadow: none;
     object-fit: cover;
   }
