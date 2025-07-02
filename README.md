@@ -7,6 +7,8 @@ Tecnologias utilizadas HTML + CSS
     - como incluir Fonts com (@font-face)
     - Metodologia BEM (CSS + Arquivos)
     - Design Responsivo com uso de Media Queries
+    - Grid layout (flex grid)
+    - Sombras e gradients 
   
 Acesse a pagina aqui: https://aenderb.github.io/web_project_homeland/
 
