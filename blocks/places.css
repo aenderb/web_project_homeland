@@ -1,10 +1,11 @@
-f.places {
+.places {
   display: flex;
   flex-direction: column;
   max-width: 984px;
   margin: 0 auto;
-  row-gap: 80px;
+  padding: 0;
   padding-top: 92px;
+  row-gap: 80px;
 }
 
 .places__item {
@@ -51,8 +52,7 @@ f.places {
 }
 
 .places__item-image {
-  width: 460px;
-  height: 460px;
+  width: 100%;
   grid-area: image;
   object-fit: cover;
   margin: 0;
@@ -104,32 +104,21 @@ f.places {
 
 @media screen and (max-width: 1000px) {
   .places {
-    display: flex;
-    flex-direction: column;
     max-width: 868px;
     margin: 0 auto;
-    row-gap: 80px;
-    padding-top: 92px;
-    padding-left: 16px;
+    padding: 92px 16px 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .places {
-    display: flex;
-    flex-direction: column;
-    max-width: 720px;
-    margin: 0 auto;
-    row-gap: 80px;
-    padding-top: 92px;
-    padding-left: 16px;
+    padding: 92px 24px 0;
   }
 
   .places__item {
     width: 100%;
-    display: grid;
-    grid-template-columns: 320px auto;
-    grid-gap: 48px 40px;
+    grid-template-columns: 340px auto;
+    grid-gap: 48px 28px;
     grid-template-areas:
       "title artist"
       "image description"
@@ -161,24 +150,23 @@ f.places {
 
 @media screen and (max-width: 500px) {
   .places {
-    display: flex;
-    flex-direction: column;
-    max-width: 390px;
+    padding: 92px 24px 0;
     margin: 0 auto;
-    row-gap: 50px;
-    padding-top: 62px;
   }
-
   .places__item {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+    width: 100%;
+    grid-template-columns: 412px;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "description"
+      "button";
   }
-
   .places__item-title {
     font-size: 32px;
     line-height: 35px;
+    grid-area: title;
   }
 
   .places__item-description {
@@ -194,8 +182,8 @@ f.places {
   }
 
   .places__item-image {
-    width: 352px;
-    height: 352px;
+    width: 100%;
+    height: auto;
     box-shadow: none;
     object-fit: cover;
   }
@@ -203,18 +191,18 @@ f.places {
 
 @media screen and (max-width: 320px) {
   .places {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    margin: 0 auto;
-    row-gap: 30px;
-    padding-top: 62px;
+    padding: 62px 16px 0;
+    margin: 0;
   }
-
   .places__item {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 288px;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "description"
+      "button";
+    margin: 0 auto;
   }
 
   .places__item-title {
@@ -235,8 +223,8 @@ f.places {
   }
 
   .places__item-image {
-    width: 320px;
-    height: 320px;
+    width: 100%;
+    height: 288px;
     box-shadow: none;
     object-fit: cover;
   }

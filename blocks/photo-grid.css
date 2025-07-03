@@ -1,5 +1,10 @@
 .photo-grid {
   max-width: 1184px;
+  margin: 0 auto;
+}
+
+.photo-grid__container {
+  max-width: 1184px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -7,14 +12,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   gap: 16px;
-  padding: 118px 48px 0;
+  padding-top: 118px;
+  margin: 0 auto;
 }
 
 .photo-grid__item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .photo-grid__image {
@@ -24,29 +30,19 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .photo-grid {
+  .photo-grid__container {
     max-width: 900px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
-    padding: 64px 24px 0;
-  }
-  .photo-grid__image {
-    width: 266px;
-    height: 196px;
-    object-fit: cover;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .photo-grid {
+  .photo-grid__container {
     max-width: 720px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 16px;
-    padding: 64px 24px 0;
   }
   .photo-grid__image {
     width: 352px;
@@ -57,28 +53,36 @@
 
 @media screen and (max-width: 500px) {
   .photo-grid {
-    max-width: 400px;
+    max-width: 480px;
+  }
+
+  .photo-grid__container {
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 12px;
-    padding: 64px 24px 0;
+    padding: 0;
+    padding-top: 24px;
   }
   .photo-grid__image {
-    width: 352px;
-    height: 264px;
+    width: 480px;
+    height: auto;
     object-fit: cover;
   }
 }
 
 @media screen and (max-width: 320px) {
   .photo-grid {
-    width: 288px;
+    max-width: 320px;
+  }
+  .photo-grid__container {
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 12px;
-    padding: 64px 24px 0;
+    padding-top: 64px;
   }
   .photo-grid__image {
     width: 288px;

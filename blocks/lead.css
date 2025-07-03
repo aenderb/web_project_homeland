@@ -50,6 +50,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .lead__image {
+    max-width: 400px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .lead__title {
     font-size: 2.5rem;
